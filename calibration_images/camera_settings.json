@@ -1,0 +1,18 @@
+{
+  "requested": {
+    "ExposureTime": 11000,
+    "AnalogueGain": 1.0,
+    "ColourGains": [
+      1.5,
+      1.5
+    ]
+  },
+  "actual": {
+    "ExposureTime": 10989,
+    "AnalogueGain": 1.0,
+    "ColourGains": [
+      1.5,
+      1.5
+    ]
+  }
+}
