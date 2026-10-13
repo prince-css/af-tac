@@ -47,7 +47,7 @@ After both steps, power on the Pi. Check that the camera is detected.
 
 > **Note: running on other Linux computers**
 >
-> This setup was built and tested on a **Raspberry Pi**, but the software isn't tied to it. It runs on any Linux PC with Python, NumPy and OpenCV.
+> This setup was built and tested on a **Raspberry Pi**, but the software isn't tied to it. It runs on any Linux PC with Python, NumPy and OpenCV. [Please follow the communication setup of the previous repo I shared in that case]
 > - **Processing saved data** (reconstruction, point clouds, videos) needs no changes.
 > - **Live capture** (`capture_calibration_images_locked.py`, `realtime_3d_reconstruction.py`) reads frames through the Raspberry Pi camera library (`picamera2`).
 >   On another computer, only the **image-feed lines** need replacing: the camera setup and the `capture_array()` calls, for example with OpenCV's `cv2.VideoCapture`.
@@ -219,7 +219,4 @@ The ROI is loaded from `roi_config.json` automatically. There is nothing to sele
 | **q** / ESC | Quit |
 
 ### Notes
-- The top line shows the **max depth (mm)**, the display exaggeration and the frame rate.
-- The terminal shows the tuned exposure and its ratio to the calibration exposure. The closer it is to **1.0**, the more accurate the depths.
-- **Too slow?** Raise `GRID_STRIDE` at the top of the script (4 → 5). **Want a denser surface?** Lower it (4 → 3).
-- If the surface gets bumpy over time with nothing touching it, press **b** to take a fresh reference.
+- Please change the reconstruction script according to your visualization purposes.
