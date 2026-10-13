@@ -1,4 +1,4 @@
-# Data Collection Guide
+# Data Collection and Reconstruction Guide
 
 How to capture tactile sensor data that can be reconstructed with the **existing, saved calibration**.
 You do not calibrate anything. You only capture reference frames and press frames, using the same camera settings as the calibration.
